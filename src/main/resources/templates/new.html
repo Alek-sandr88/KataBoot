@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body th:align="center">
+<h1>Добавление Пользователя</h1>
+
+<form th:method="POST" th:action="@{/new}" th:object="${user}">
+    <label for="name">Enter name:</label>
+    <input type="text" th:field="*{name}" id="name"/>
+    <br/>
+    <br/>
+    <label for="surname">Enter surname:</label>
+    <input type="text" th:field="*{surname}" id="surname"/>
+    <br/>
+    <br/>
+    <label for="age">Enter age:</label>
+    <input type="text" th:field="*{age}" id="age"/>
+    <br/>
+    <br/>
+    <label for="email">Enter email:</label>
+    <input type="text" th:field="*{email}" id="email"/>
+    <br>
+    <br>
+    <input type="submit" value="Добавить">
+    <br/>
+</form>
+</body>
+</html>
