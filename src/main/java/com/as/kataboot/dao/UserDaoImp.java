@@ -38,3 +38,4 @@ public class UserDaoImp implements UserDao {
         entityManager.remove(getUserById(id));
     }
 }
+
